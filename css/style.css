@@ -3,16 +3,17 @@
 }
 
 .row {
-    min-height: 50px;
+    min-height: auto;
     border: 1px solid white;
     color: white;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
+    rgb(0, 94, 255) */
 }
 
-.row-blue {
-    background-color: rgb(0, 94, 255);
+.row-green {
+    background-color: rgb(0, 255, 102);
     border: 1px solid white;
     color: white;
     padding: 1rem;
@@ -21,14 +22,14 @@
     align-items: center;
 }
 
-.nested {
+/* .nested {
     background-color: rgb(84, 100, 128);
     border: 1px solid white;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 [class*=col] {
     background-color: rgb(0, 94, 255);
@@ -40,9 +41,18 @@
     justify-content: center;
 }
 
+[class*=col-green] {
+    background-color: rgb(0, 255, 102);
+    border: 1px solid white;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nested-col {
     background-color: rgb(0, 255, 81);
-    border: 1px solid rgb(0, 94, 255);
     height: 50px;
     color: white;
     display: flex;
